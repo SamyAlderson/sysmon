@@ -1,0 +1,29 @@
+Cargo.lock
+```toml
+[root]
+edition = "2021"
+dependencies = [
+  "clap = \"3.2.1\"",
+  "futures = \"0.3.29\"",
+  "log = \"0.4.16\"",
+  "serde_json = \"1.0.94\"",
+]
+
+[manifest]
+dependencies = [
+  "clap = \"3.2.1\"",
+  "futures = \"0.3.29\"",
+  "log = \"0.4.16\"",
+  "serde_json = \"1.0.94\"",
+]
+
+[targets]
+main = {
+  dependencies = [
+    "clap",
+    "futures",
+    "log",
+    "serde_json",
+  ]
+}
+```
